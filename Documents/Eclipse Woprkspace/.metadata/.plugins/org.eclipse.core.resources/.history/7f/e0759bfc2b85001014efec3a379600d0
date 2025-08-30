@@ -1,0 +1,73 @@
+import files.payload;
+import io.restassured.path.json.JsonPath;
+
+public class complexJsonParse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//gp tp https://jsoneditoronline.org/ and paste the json body to understand better
+		//below is the json response
+		
+		/* {
+
+"dashboard": {
+
+"purchaseAmount": 910,
+
+"website": "rahulshettyacademy.com"
+
+},
+
+"courses": [
+
+{
+
+"title": "Selenium Python",
+
+"price": 50,
+
+"copies": 6
+
+},
+
+{
+
+"title": "Cypress",
+
+"price": 40,
+
+"copies": 4
+
+},
+
+{
+
+"title": "RPA",
+
+"price": 45,
+
+"copies": 10
+
+}
+
+]
+
+}
+
+*/
+		JsonPath js=new JsonPath(payload.CoursePrice());
+	
+	//print no of courses returned by API
+	
+		int CoursesCount= js.get("courses.size()");
+		
+		System.out.println(CoursesCount);
+		
+		
+		
+		
+		
+	}
+
+}
