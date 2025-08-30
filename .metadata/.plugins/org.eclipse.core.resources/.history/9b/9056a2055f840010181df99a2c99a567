@@ -1,0 +1,15 @@
+
+public class Basics {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+// validate if Add Place API is working as expected
+		
+		//given- all input details
+		//when - submit the API 
+		//then - validate response
+		
+		RestAssured
+	}
+
+}
